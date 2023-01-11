@@ -1,0 +1,44 @@
+body{
+    background-color:rgb(248, 146, 160);
+}
+.container{
+    display: flex;
+    margin-bottom: 14px;
+    justify-content: space-between;
+}
+.topbox {
+    background-color: rgb(33, 236, 209);
+    width: 100%;
+    height: 95px;
+    margin-bottom: 16px;
+    text-align: center;
+    -webkit-text-fill-color: white;
+}
+.aside{
+    width: 25%;
+    height: 430px;
+    background-color: rgb(56, 179, 162);
+    -webkit-text-fill-color: white;
+    text-align: center;
+}
+.article{
+    width: 74%;
+    height: 430px;
+    background-color: rgb(235, 100, 118);
+    -webkit-text-fill-color: white;
+    text-align: center;
+}
+img{
+    width: 25%;
+    margin: 30px;
+    margin-top: 160px;
+    border: 900px;
+}
+.buttombox{
+    background-color: rgb(33, 236, 209);
+    width: 100%;
+    height: 95px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-text-fill-color: white;
+}

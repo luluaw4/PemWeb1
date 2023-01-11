@@ -1,0 +1,13 @@
+body{
+    /* reset  */
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+img {
+    height: 10vw; /* tinggi gambar 1   */
+    /* mengisi ruang kosong */
+    margin: 1px;
+}
