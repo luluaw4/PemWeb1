@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.topbox {
+  background-color: #aede94;
+  border: 2px solid #000;
+  width: 200%;
+  height: 100px;
+}
+.box {
+  background-color: #f4eb48;
+  border: 2px solid #000;
+  height: 220px;
+}
+.container .box:nth-child(1) {
+  background-color: #f4eb48;
+  width: 20%;
+}
+.container .box:nth-child(2) {
+  width: 77%;
+}
+.bg-orange {
+  background-color: #ff6623;
+}
+.bg-blue {
+  background-color: #2edfd6;
+}
