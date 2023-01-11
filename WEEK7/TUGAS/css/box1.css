@@ -1,0 +1,26 @@
+html {
+  font-family: 'Courier New', Courier, monospace;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(247, 255, 179);
+  padding: 20px;
+}
+.kotak {
+  border: 0px solid #000;
+  width: 260px;
+  height: 260px;
+}
+.item-1 {
+  background-color: #f4eb48;
+}
+.item-2 {
+  background-color: #ff6623;
+}
+.item-3 {
+  background-color: #aede94;
+}
+.item-4 {
+  background-color: #2edfd6;
+}
