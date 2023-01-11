@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Pizza</title>
+  </head>
+  <body>
+    <h3>Black Goose Bistro | Pizza-on-Demand</h3>
+    <p>
+      Our 12" wood-fired pizzas are available for delivery. Build your <br />
+      custom pizza and we'll deliver it within an hour.
+    </p>
+    <form action="thankyou.html" method="get">
+      <table>
+        <tr>
+          <td>Your Information</td>
+        </tr>
+        <tr>
+          <td>Name: <input type="text" name="nama" size="25" /></td>
+        </tr>
+        <tr>
+          <td>Address: <input type="text" name="alamat" size="45" /></td>
+        </tr>
+        <tr>
+          <td>Telephone Number: <input type="text" name="nomor telepon" size="25" /></td>
+        </tr>
+        <tr>
+          <td>Email: <input type="email" name="email" size="35" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><label>Delivery instructions</label>: <br /><textarea name="instruksi" id=""></textarea></td>
+        </tr>
+      </table>
+        <b>Design Your Dream Pizza:</b><br />
+        Pizza specs
+        <h4 style="margin: 20px 0 10px 0">Crust (Choose One):</h4>
+        <ul style="list-style: none; margin: 0; padding-left: 15px">
+          <li>
+            <input type="radio" name="crust" id="white" />
+            <label>Classic White</label>
+          </li>
+          <li>
+            <input type="radio" name="crust" id="white" />
+            <label>Multigrain</label>
+          </li>
+          <li>
+            <input type="radio" name="crust" id="white" />
+            <label>Cheese-stuffed crust</label>
+          </li>
+          <li>
+            <input type="radio" name="crust" id="white" />
+            <label>Gluten-free</label>
+          </li>
+        </ul>
+        <h4 style="margin: 10px 0">Toppings (Choose as many as you want):</h4>
+        <ul style="list-style: none; margin: 0; padding-left: 15px">
+          <li>
+            <input type="checkbox" checked name="crust" id="white" /> 
+            <label>Red sauce</label>
+          </li>
+          <li>
+            <input type="checkbox" name="crust" id="white" />
+            <label>White sauce</label>
+          </li>
+          <li>
+            <input type="checkbox" name="crust" id="white" />
+            <label>Mozzarella Cheese</label>
+          </li>
+          <li>
+            <input type="checkbox" name="crust" id="white" />
+            <label>Pepperoni</label>
+          </li>
+          <li>
+            <input type="checkbox" name="crust" id="white" />
+            <label>Mushrooms</label>
+          </li>
+          <li>
+            <input type="checkbox" name="crust" id="white" />
+            <label>Peppers</label>
+          </li>
+          <li>
+            <input type="checkbox" name="crust" id="white" />
+            <label>Anchovies</label>
+          </li>
+        </ul>
+        <br />
+        <h4 style="margin: 4px 0">Number</h4>
+        <label>How many pizzas:</label>
+        <input type="number" id="jumlah" min="0" max="6" />
+        <br />
+        <p><input type="submit" value="Submit" />
+        <input type="reset" value="Cancel" />
+      </fieldset>
+  </body>
+</html>
