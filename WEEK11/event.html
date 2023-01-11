@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body onload="isi()">
+    <div id="nf" OnMouseOver="biru()" OnMouseOut="kuning()"></div>
+
+    <!-- buat script -->
+    <script>
+        // tambahkan value ke dalam element div html
+        let area_nf
+        function isi() {
+            area_nf = document.getElementById("nf");
+            area_nf.innerHTML = "<h1>STT Nurul Fikri</h1>";
+        };
+        // buat function biru untuk mengubah warna background
+        // ketika cursor di arahkan ke judul
+        function biru() {
+            area_nf.style.backgroundColor = "blue";
+            area_nf.style.color = "white";
+        };
+        // buat function kuning untuk mengubah warna background
+        // ketika cursor di arahkan ke judul
+        function kuning() {
+            area_nf.style.backgroundColor = "yellow";
+            area_nf.style.color = "black";
+        };
+    </script>
+</body>
+
+</html>
