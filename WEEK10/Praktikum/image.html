@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        .list{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <select onchange="gantigambar()" name="listgambaer" id="listgambar" class="list">
+        <option value="">Pilih Gambar</option>
+        <option value="https://cdn1-production-images-kly.akamaized.net/wvjqj2DCWe4GKAqOCXoOW1YBQkQ=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1749051/original/077159200_1508825487-AFP_Getty-52363332343225.jpg">Gajah</option>
+        <option value="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg">Kucing</option>
+        <option value="https://cdn1-production-images-kly.akamaized.net/abMcJ8OXePdazpk0hMMZ3SvtpjU=/1200x900/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1578142/original/025876500_1493270690-Buaya8.jpg">Buaya</option>
+        </select>
+    </center>
+    <br/>
+    <img style="width: 300px;" src="https://thumbs.dreamstime.com/b/hello-cat-text-card-vector-illustration-funny-style-cats-characters-welcome-poster-black-white-kitty-167135966.jpg" alt="" id="gambar">
+    <img src="" alt="" width="500" id="gambar" />
+<script>
+    function gantigambar() {
+        let gambar = document.getElementById("listgambar").value;
+        document.getElementById("gambar").src = gambar;
+    }
+</script>
+</body>
+</html>
