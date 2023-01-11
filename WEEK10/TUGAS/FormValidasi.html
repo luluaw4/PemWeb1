@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <fieldset style="width: 500px;">
+    <legend style="text-align: center;">Form Validasi</legend>
+    <br>
+    <form>
+        <div class="form" style="background-color: rgb(187, 255, 255);">
+            <label for="nama">Nama Pelanggan: <br /></label>
+            <input type="text" id="nama" maxlength="30" required/>
+            <span id="nama tidak valid" style="color: red;"></span>
+        <br>
+        <br>
+        <div>
+            <label for="email">Email : <br /></label>
+            <input type="email" id="email" required/>
+            <span id="email tidak valid" style="color: red;"></span>
+        </div>
+        <br>
+        <div>
+            <label for="jam">Jam Keberangkatan : <br /></label>
+            <input type="time" id="jam" required/>
+            <span id="jam keberangkatan harap diisi" style="color: red;"></span>
+        </div>
+        <br>
+        <div>
+            <label for="tujuan">Tujuan Keberangkatan : <br /></label>
+            <input type="text" id="tujuan" required>
+            <span id="tujuan keberangkatan harap diisi" style="color: red;"></span>
+        </div>
+        <br>
+        <div>
+            <label for="tiket">Jumlah Tiket : <br /></label>
+            <select id="tiket" required>
+                <option value="0">Pilih jumlah tiket</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <span id="pilih jumlah tiket" style="color: red;"></span>
+        </div>
+        <br>
+        <button type="button" onclick="validasi()" style="width: 180px;">Submit</button>
+    </form>
+    <br><br>
+    <span id="hasilnama"></span><br>
+    <span id="hasilemail"></span><br>
+    <span id="hasiljam"></span><br>
+    <span id="hasiltujuan"></span><br>
+    <span id="hasiltiket"></span>
+    </fieldset>
+</body>
+    <script>
+        function validasi(){
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value
+            let jam = document.getElementById("jam").value
+            let tujuan = document.getElementById("tujuan").value
+            let tiket = document.getElementById("tiket").value
+
+            textError = "Data Tidak Valid"
+            if (nama == " jam == null || tujuan == " || tiket == 0) {
+                document.getElementById("nama tidak valid").innerHTML = textError
+                return false
+            }
+            else if (email == "") {
+                document.getElementById("email tidak valid").innerHTML = textError
+                document.getElementById("nama tidak valid").innerHTML = ""
+                return false
+            }
+            else if (jam == "") {
+                document.getElementById("jam keberangkatan harap diisi").innerHTML = textError
+                document.getElementById("email tidak valid").innerHTML = ""
+                return false
+            }
+            else if (tujuan == "") {
+                document.getElementById("tujuan keberangkatan harap diisi").innerHTML = textError
+                document.getElementById("jam keberangkatan harap diisi").innerHTML = ""
+                return false
+            }
+            else if (tiket == 0) {
+                document.getElementById("pilih jumlah tiket").innerHTML = textError
+                document.getElementById("tujuan keberangkatan harap diisi").innerHTML = ""
+                return false
+            }
+            else {
+                document.getElementById("pilih jumlah tiket").innerHTML = ""
+            }
+            
+            document.getElementById("hasilnama").innerText = "Nama Pelanggan : " + nama.toUpperCase();
+            document.getElementById("hasilemail").innerText = "Alamat Email : " + email;
+            document.getElementById("hasiljam").innerText = "Jam Keberangkatan : " + jam;
+            document.getElementById("hasiltujuan").innerText = "Tujuan Keberangkatan : " + tujuan.toUpperCase();
+            document.getElementById("hasiltiket").innerText = "Jumlah Tiket : " + tiket;
+        }
+    </script>
+</html>
